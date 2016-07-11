@@ -1,0 +1,54 @@
+/* Empty. Add your own CSS if you like */
+.input[type="text"] {
+	border: 1px solid lightgray !important;
+	
+}
+.input[type="checkbox"] {
+	border: 1px solid lightgray !important;
+	
+}
+.input[type="radio"] {
+	border: 1px solid lightgray !important;
+	-webkit-appearance:none !important;
+  width:16px !important;
+  height:16px !important;
+  border-radius:50% !important;
+	
+}
+.input[type="date"] {
+	border: 1px solid lightgray !important;
+	padding-left: 11px;
+}
+textarea {
+	border: 1px solid lightgray !important;
+}
+
+.item-input {
+	align-items: center !important;
+	display: flex !important;
+	position: relative !important;
+	padding: 11px 11px 11px 11px !important;
+}
+
+.item-select select {
+	flex: 1 1 220px !important;
+	border: 1px solid lightgray !important;
+	position: initial !important;
+	height: 34px;
+	direction: unset !important;
+}
+.in_pad{
+	padding-left: 25px !important;
+}
+.input{
+	padding-right:25px !important;
+}
+.Label5{
+	padding-left: 9px !important;
+}
+.in_pad1{
+	padding-left: 69px !important;
+}
+.btn{
+	text-align:right;
+}
