@@ -1,99 +1,92 @@
-<ion-view title="Brand" id="page1" class=" "> 
-
-<ion-content padding="true" class="has-header"> 
-
-	<ion-list id="motorolaSolutions-list1" class=" "> 
-	
-		<label class="item item-input">	
-				<span class="input-label">Label1</span>
-				<input type="text" ng-model="sampleData.labelOne" class="input" placeholder="">
-		</label> 
-		
-		<label class="item item-input"> 
-			<span class="input-label">Label2</span>
-			<input type="text" ng-model="sampleData.labelTwo" class="input" placeholder="">
-		</label> 
-		
-		<label class="item item-input item-select"> 
-			<span class="input-label">Label3</span> 
-			<select class="input" ng-model="sampleData.labelThree">
-				<option>Yes</option>
-				<option selected>No</option>
-			</select>
-		</label> 
-		
-		<label class="item item-input"> 
-			<span class="input-label">Label4</span>
-			<span class="in_pad"></span> 
-			<span class="item-icon-right"> 
-					<i class="icon ion-ios-calendar-outline"></i> 
-					<input type="text" class="input" ng-model="sampleData.labelFour" pick-a-date="depDate" pick-a-date-options="depOptions" placeholder="" />
-			</span>
-		</label>
-		
-		<label class="item item-checkbox Label5 ">Label5
-			<span class="in_pad1"></span> 
-			<input type="checkbox" class="input" ng-model="sampleData.labelFive">
-		</label> 
-		
+<ion-view view-title="Brand"> <ion-content
+	ng-class="{expanded:isExpanded}">
+	<div class="list animate-fade-slide-in-right">
 		<label class="item item-input">
-              <span class="input-label">Label6</span>
-              <div class="some-class">
-                    <label for="y">AM </label>
-                    <input type="radio" class="radio" name="x" value="y" id="y" ng-model="sampleData.labelSix" />
-                    <label for="z">PM </label>
-                    <input type="radio" class="radio" name="x" value="z" id="z" />   
-                    <label for="x">Any </label>
-                    <input type="radio" class="radio" name="x" value="x" id="x" />                    
-               </div>
-         </label>
-         
-         <label class="item item-checkbox Label5 ">Label7
-         		<span class="in_pad1"></span> 
-         		<input type="checkbox" class="input" ng-model="sampleData.labelSeven">lorem ipsum loren
+		 <span class="input-label">Label1</span>
+			<input type="text" ng-model="sampleData.labelOne" class="input">
 		</label>
-            
-            
-            
-   </ion-list>
-   
-   <br>
-   
-   <button class="button button-positive button-small" ng-click="saveSampleData()"> Save One </button>   
-   <button class="button button-positive button-small" ng-click="getSampleData()"> Get All </button>
-   
-   <div class="list card">
-      <div class="item item-divider item-postive">Feature1</div>
-      <div class="item item-body">
-        	<div ng-repeat="result in resultArray">
-       			1 : {{result.labelOne}}
-       			2 : {{result.labelTwo}}
-       			3 : {{result.labelThree}}
-       			4 : {{result.labelFour}}
-       			5 : {{result.labelFive}}
-       			6 : {{result.labelSix}}
-       			<br>
-       			____________________________
-       		</div>
-      </div>
-   </div>
-
-	<div class="list card">
-		<div class="item item-divider item-postive">Feature2</div>
-		<div class="item item-body">
-			<div><!-- updates later --></div>
-		</div>
+		
+		 <label class="item item-input">
+		  <span class="input-label">Label2</span>
+			<input type="text" ng-model="sampleData.labelTwo" class="input"
+			placeholder="">
+		</label>
+		
+		 <label class="item item-input item-select"> <span
+			class="input-label">Label3</span> 
+			<select class="input"
+			ng-model="sampleData.labelThree">
+				<option>Yes</option>
+				<option>No</option>
+		</select>
+		</label>
+		
+		 <label class="item item-input"> 
+		 <span class="input-label">Label4</span>
+			<span class="item-icon-right"> <i
+				class="icon ion-ios-calendar-outline"></i> <input type="text" 
+				class="input" ng-model="sampleData.labelFour" pick-a-date="depDate"
+				pick-a-date-options="depOptions" placeholder="" />
+		</span>
+		</label> 
+		
+		<label class="item item-input label5"><span class="labelTex">Label5</span><span
+			class="in_pad1"></span> <ion-checkbox ng-model="sampleData.labelFive"
+				ng-checked="item.checked" class="item-checkbox-left">
+			</ion-checkbox>
+			</label>
+			
+			 <label class="item item-input">
+			  <span class="input-label">Label6</span>
+			<span class="in_pad1"></span> 
+			<ion-radio value="AM" id="AM"
+				ng-model="sampleData.labelSix" />AM</ion-radio> <ion-radio value="PM" id="PM"
+				ng-model="sampleData.labelSix" />PM </ion-radio> <ion-radio value="Any" id="Any"
+				ng-model="sampleData.labelSix" />Any </ion-radio>
+		</label> 
+		
+		<label class="item item-input label5"><span class="labelTex">Label7</span><span
+			class="in_pad1"></span> <ion-checkbox
+				ng-model="sampleData.labelSeven">lorem ipsum loren</ion-checkbox></label>
+ <label class="item item-input"> 
+		<button class="button button-assertive button-small"
+			ng-click="saveSampleData()">Save One</button>&nbsp;&nbsp;&nbsp;
+		<button class="button button-energized button-small"
+			ng-click="getSampleData()">Get All</button></label>
+<div class="list half">
+            <div class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>Feature1</h2>
+                   
+                </div>
+                <div  class="" ng-repeat="result in resultArray">
+                <ion-list>
+                <div class="">
+					 <span class="col-sm-2 col-xs-7 side_label">label1 </span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelOne}}</span></div>
+					<span class="col-sm-2 col-xs-7 side_label">label2</span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelTwo}}</span>
+					<span class="col-sm-2 col-xs-7 side_label">label3 </span><span
+			class="col-sm-10 col-xs-5 s_label">{{result.labelThree}} </span>
+					<span class="col-sm-2 col-xs-7 side_label">label4 </span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelFour}}</span>
+					<span class="col-sm-2 col-xs-7 side_label">label5 </span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelFive}}</span>
+					<span class="col-sm-2 col-xs-7 side_label">label6 </span><span
+			class="col-sm-10 col-xs-5 s_label">{{result.labelSix}}</span>
+			<span class="col-sm-2 col-xs-7 side_label">label7 </span><span
+			class="col-sm-10 col-xs-5 s_label">{{result.labelSeven}}</span>
+		<span class="text"></span>
+			</ion-list>
+				</div>
+            </div>
+         <div class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>Feature2</h2>
+                </div>
+                	<div>updates later</div>
+            </div> 
+        </div>
 	</div>
 
-	<div class="list card">
-		<div class="item item-divider item-postive">Feature2</div>
-		<div class="item item-body">
-			<div>
-				<!-- updates later -->
-			</div>
-		</div>
-	</div>
-	
-</ion-content> 
- 
- </ion-view>
+</ion-content> </ion-view>
