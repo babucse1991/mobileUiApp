@@ -1,0 +1,210 @@
+/* General
+==================================*/
+h1 {
+    color: #fff;
+    text-shadow: 0 1px 0px #000;
+    font-size: 42px;
+}
+
+
+/* Utilities
+==================================*/
+.title-bordered {
+    border-top: solid 2px #bbb;
+    padding-top: 30px;
+}
+
+p {
+    color: #555;
+    margin: 0 0 25px;
+}
+
+.scroll {
+    height: 100%;
+}
+
+
+/* Menu
+==================================*/
+.menu .bar.bar-header.expanded {
+    transition: all .5s ease-in-out;
+}
+
+.menu-open .bar.bar-header.expanded {
+    background-color: #222;
+}
+
+.menu h2 {
+    bottom: 0;
+    font-size: 18px;
+    left: 16px;
+    position: absolute;
+}
+
+.menu .avatar {
+    height: 88px;
+    width: 88px;
+}
+
+.menu.menu-left * {
+    font-weight: bold;
+}
+
+.menu-open .ion-navicon {
+    transform: rotate(-360deg);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-open .ion-navicon:before {
+    content: "\f2ca";
+}
+
+
+/* Login
+==================================*/
+.app-icon {
+    background-color: #fff;
+    background: url('../img/crown.jpg') center;
+    background-size: cover;
+    border-radius: 50%;
+    height: 125px;
+    margin: 0 auto;
+    width: 125px;
+}
+
+.social-login {
+    position: fixed;
+    bottom: 0;
+}
+
+/* Empty. Add your own CSS if you like */
+.input[type="text"] {
+	border: 1px solid lightgray !important;
+	
+}
+.input[type="checkbox"] {
+	border: 1px solid lightgray !important;
+	
+}
+.input[type="radio"] {
+	border: 1px solid lightgray !important;
+	-webkit-appearance:none !important;
+  width:16px !important;
+  height:16px !important;
+  border-radius:50% !important;
+	
+}
+.input[type="date"] {
+	border: 1px solid lightgray !important;
+	padding-left: 11px;
+}
+textarea {
+	border: 1px solid lightgray !important;
+}
+
+
+.item-input {
+	align-items: center !important;
+	position: relative !important;
+	padding: 11px 11px 11px 11px !important;
+}
+
+.item-select select {
+	flex: 1 1 220px !important;
+	border: 1px solid lightgray !important;
+	position: initial !important;
+	height: 34px;
+	direction: unset !important;
+	 padding: 8px !important;
+}
+.in_pad{
+	padding-left: 25px !important;
+}
+.input{
+	padding-right:25px !important;
+}
+.Label5{
+	padding-left: 9px !important;
+	
+}
+.labelTex{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+	font-size: 16px !important;
+	font-weight: bold !important;
+}
+.in_pad1{
+	padding-left: 69px !important;
+}
+.btn{
+	text-align:right;
+}
+.side_label {
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 16px;
+	font-weight: bold;
+	 padding: 8px;
+}
+
+.s_label {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 16px;
+	 padding: 8px;
+}
+.check{
+	padding: 11px 11px 11px 11px !important;
+	float: right  !important;
+}
+.item-checkbox-right .checkbox input,
+.item-checkbox-right .checkbox-icon {
+  float: right !important;
+}
+.some-class{
+  display: inline-block !important;
+}
+.list.half{
+	 width: 100% !important;
+}
+.darkHeader{
+	color:#fff !important;
+	padding: 3px !important;
+}
+.bar.bar-header.expanded, .expanded .bar.bar-header {
+    height: 40px !important;
+}
+.input-label{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+	font-size: 16px !important;
+	font-weight: bold !important;
+}
+/* 
+.input {
+  border-bottom: solid 1px darkgray !important;
+  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
+  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, darkgray 4%) !important;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, darkgray 4%) !important;
+  background-position: -200px 0 !important;
+  background-size: 200px 100%  !important;
+  background-repeat: no-repeat !important;
+  color: #0e6252 !important;
+}
+.input:focus{
+ box-shadow: none !important;
+ outline: none !important;
+ background-position: 0 0 !important;
+}
+.input:focus::-webkit-input-placeholder {
+ color: darkgray !important;
+ font-size: 11px !important;
+ -webkit-transform: translateY(-20px) !important;
+ transform: translateY(-20px) !important;
+ visibility: visible !important !important;
+}
+select {
+     border-bottom: solid 1px darkgray !important;
+    direction: unset !important;
+    flex: 1 1 220px !important;
+    height: 34px;
+    position: initial !important;
+} */

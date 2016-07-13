@@ -1,0 +1,92 @@
+<ion-view view-title="Brand"> <ion-content
+	ng-class="{expanded:isExpanded}">
+	<div class="list animate-fade-slide-in-right">
+		<label class="item item-input">
+		 <span class="input-label">Label1</span>
+			<input type="text" ng-model="sampleData.labelOne" class="input">
+		</label>
+		
+		 <label class="item item-input">
+		  <span class="input-label">Label2</span>
+			<input type="text" ng-model="sampleData.labelTwo" class="input"
+			placeholder="">
+		</label>
+		
+		 <label class="item item-input item-select"> <span
+			class="input-label">Label3</span> 
+			<select class="input"
+			ng-model="sampleData.labelThree">
+				<option>Yes</option>
+				<option>No</option>
+		</select>
+		</label>
+		
+		 <label class="item item-input"> 
+		 <span class="input-label">Label4</span>
+			<span class="item-icon-right"> <i
+				class="icon ion-ios-calendar-outline"></i> <input type="text" 
+				class="input" ng-model="sampleData.labelFour" pick-a-date="depDate"
+				pick-a-date-options="depOptions" placeholder="" />
+		</span>
+		</label> 
+		
+		<label class="item item-input label5"><span class="labelTex">Label5</span><span
+			class="in_pad1"></span> <ion-checkbox ng-model="sampleData.labelFive"
+				ng-checked="item.checked" class="item-checkbox-left">
+			</ion-checkbox>
+			</label>
+			
+			 <label class="item item-input">
+			  <span class="input-label">Label6</span>
+			<span class="in_pad1"></span> 
+			<ion-radio value="AM" id="AM"
+				ng-model="sampleData.labelSix" />AM</ion-radio> <ion-radio value="PM" id="PM"
+				ng-model="sampleData.labelSix" />PM </ion-radio> <ion-radio value="Any" id="Any"
+				ng-model="sampleData.labelSix" />Any </ion-radio>
+		</label> 
+		
+		<label class="item item-input label5"><span class="labelTex">Label7</span><span
+			class="in_pad1"></span> <ion-checkbox
+				ng-model="sampleData.labelSeven">lorem ipsum loren</ion-checkbox></label>
+ <label class="item item-input"> 
+		<button class="button button-assertive button-small"
+			ng-click="saveSampleData()">Save One</button>&nbsp;&nbsp;&nbsp;
+		<button class="button button-energized button-small"
+			ng-click="getSampleData()">Get All</button></label>
+<div class="list half">
+            <div class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>Feature1</h2>
+                   
+                </div>
+                <div  class="" ng-repeat="result in resultArray">
+                <ion-list>
+                <div class="">
+					 <span class="col-sm-2 col-xs-7 side_label">label1 </span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelOne}}</span></div>
+					<span class="col-sm-2 col-xs-7 side_label">label2</span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelTwo}}</span>
+					<span class="col-sm-2 col-xs-7 side_label">label3 </span><span
+			class="col-sm-10 col-xs-5 s_label">{{result.labelThree}} </span>
+					<span class="col-sm-2 col-xs-7 side_label">label4 </span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelFour}}</span>
+					<span class="col-sm-2 col-xs-7 side_label">label5 </span><span
+			class="col-sm-10 col-xs-5 s_label"> {{result.labelFive}}</span>
+					<span class="col-sm-2 col-xs-7 side_label">label6 </span><span
+			class="col-sm-10 col-xs-5 s_label">{{result.labelSix}}</span>
+			<span class="col-sm-2 col-xs-7 side_label">label7 </span><span
+			class="col-sm-10 col-xs-5 s_label">{{result.labelSeven}}</span>
+		<span class="text"></span>
+			</ion-list>
+				</div>
+            </div>
+         <div class="card card-gallery item item-text-wrap">
+                <div class="ink dark-bg">
+                    <h2>Feature2</h2>
+                </div>
+                	<div>updates later</div>
+            </div> 
+        </div>
+	</div>
+
+</ion-content> </ion-view>
