@@ -42,7 +42,7 @@ angular.module('starter', [
 		}
 	})
 	.state('tab.viewBrand', {
-		url: '/viewBrand',
+		url: '/viewBrand/:labelOne/:labelTwo/:labelThree/:labelFour/:labelFive/:labelSix/:labelSeven',
 		views: {
 			'tab-searchBrand': {
 				templateUrl: 'templates/viewBrand.html',
