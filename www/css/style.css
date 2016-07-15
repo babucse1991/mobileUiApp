@@ -1,84 +1,25 @@
-/* General
-==================================*/
-h1 {
-    color: #fff;
-    text-shadow: 0 1px 0px #000;
-    font-size: 42px;
+.item-checkbox {
+    padding-left: 43px  !important;
 }
-
-
-/* Utilities
-==================================*/
-.title-bordered {
-    border-top: solid 2px #bbb;
-    padding-top: 30px;
+.crosslab{
+	padding:18px 0px 0px 21px !important
 }
-
-p {
-    color: #555;
-    margin: 0 0 25px;
+.sidMenu{
+	padding-left:96px !important
 }
-
-.scroll {
-    height: 100%;
+.sidMenu1{
+	padding-left:88px !important
 }
-
-
-/* Menu
-==================================*/
-.menu .bar.bar-header.expanded {
-    transition: all .5s ease-in-out;
+.sidMenu2{
+	padding-left:155px !important
 }
-
-.menu-open .bar.bar-header.expanded {
-    background-color: #222;
+.check{
+	
 }
-
-.menu h2 {
-    bottom: 0;
-    font-size: 18px;
-    left: 16px;
-    position: absolute;
-}
-
-.menu .avatar {
-    height: 88px;
-    width: 88px;
-}
-
-.menu.menu-left * {
-    font-weight: bold;
-}
-
-.menu-open .ion-navicon {
-    transform: rotate(-360deg);
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-.menu-open .ion-navicon:before {
-    content: "\f2ca";
-}
-
-
-/* Login
-==================================*/
-.app-icon {
-    background-color: #fff;
-    background: url('../img/crown.jpg') center;
-    background-size: cover;
-    border-radius: 50%;
-    height: 125px;
-    margin: 0 auto;
-    width: 125px;
-}
-
-.social-login {
-    position: fixed;
-    bottom: 0;
-}
-
-/* Empty. Add your own CSS if you like */
+/* .label5{
+	 padding-left: 59px !important;
+} */
+/* 
 .input[type="text"] {
 	border: 1px solid lightgray !important;
 	
@@ -99,10 +40,6 @@ p {
 	border: 1px solid lightgray !important;
 	padding-left: 11px;
 }
-textarea {
-	border: 1px solid lightgray !important;
-}
-
 
 .item-input {
 	align-items: center !important;
@@ -129,15 +66,19 @@ textarea {
 	
 }
 .labelTex{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+	 color: #282828;
+    font-family: "Times New Roman";
 	font-size: 16px !important;
 	font-weight: bold !important;
 }
 .in_pad1{
-	padding-left: 69px !important;
+	padding-left: 59px !important;
 }
-.btn{
-	text-align:right;
+.in_pad3{
+	padding-left:29px !important;
+}
+.in_pad2{
+	padding-left: 18px !important;
 }
 .side_label {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -159,52 +100,23 @@ textarea {
 .item-checkbox-right .checkbox-icon {
   float: right !important;
 }
-.some-class{
-  display: inline-block !important;
-}
-.list.half{
-	 width: 100% !important;
-}
-.darkHeader{
-	color:#fff !important;
-	padding: 3px !important;
-}
-.bar.bar-header.expanded, .expanded .bar.bar-header {
-    height: 40px !important;
-}
+
 .input-label{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif !important;
+	 color: #282828;
+    font-family: "Times New Roman";
 	font-size: 16px !important;
 	font-weight: bold !important;
 }
-/* 
-.input {
-  border-bottom: solid 1px darkgray !important;
-  -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
-  transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1) !important;
-  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, darkgray 4%) !important;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 96%, darkgray 4%) !important;
-  background-position: -200px 0 !important;
-  background-size: 200px 100%  !important;
-  background-repeat: no-repeat !important;
-  color: #0e6252 !important;
+
+ input:focus{
+    outline: none;
+    box-shadow: 0px 0px 5px #61C5FA;
+    border-color: #5AB0DB;
 }
-.input:focus{
- box-shadow: none !important;
- outline: none !important;
- background-position: 0 0 !important;
+
+input:hover {
+    border: 1px solid #999;
+    border-radius: 5px;
 }
-.input:focus::-webkit-input-placeholder {
- color: darkgray !important;
- font-size: 11px !important;
- -webkit-transform: translateY(-20px) !important;
- transform: translateY(-20px) !important;
- visibility: visible !important !important;
-}
-select {
-     border-bottom: solid 1px darkgray !important;
-    direction: unset !important;
-    flex: 1 1 220px !important;
-    height: 34px;
-    position: initial !important;
-} */
+
+ */
